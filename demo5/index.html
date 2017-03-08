@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body{
+				margin: 0px;
+				padding: 0px;
+				background-color: rgba(0,0,0,0.2);
+			}
+			.nav{
+				background: #333333;
+				width: 100%;
+				height: 50px;
+				overflow: hidden;
+			}
+			.nav img{
+				position: absolute;
+				left: 20px;
+				height: 50px;
+			}
+			.nav .daohang{
+				float: right;
+				margin: 17px 20px;
+				color: white;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			.right{
+				position: absolute;
+				width: 400px;
+				background-color: white;
+				right: 20px;
+				top: 70px;
+			}
+			.left{
+				height: 400px;
+				background-color: white;
+				margin: 20px 440px 0px 20px;
+			}
+			
+			.table{
+				margin: 20px;
+			}
+			
+			.table .td-1{
+				width: 150px;
+				height: 30px;
+				text-align: right;
+			}
+			.table .td-2{
+				width: 210px;
+				height: 30px;
+			}
+			.table .flag{
+				font-size: 14px;
+				color: gray;
+			}
+			
+			.btn{
+				position: relative;
+				left: 2%;
+				width: 96%;
+				height: 40px;;
+				background-color: #3355D0;
+				border-radius: 10px;
+				color: #FFFFFF;
+				font-family: "黑体";
+				font-size: 20px;
+			}
+			
+			.table textarea{
+				height: 100px;
+			}
+
+			.window{
+				float: left;
+				height: auto;
+				margin: 0px;
+				width: 100%;
+				background-color: #FFFFFF;
+				font-family: "黑体";
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+			}
+			.window .text-space{
+				position: relative;
+				left: 2%;
+				padding-right: 3%;
+				
+			}
+			.window .text-indent{
+				text-indent: 24px;
+			}
+			
+			.window .good-photo{
+				margin-left: 5%;
+				margin-top: 2%;
+				border: 1px solid;
+				text-align: center;
+				height: auto;
+				width: 100px;
+				padding: 10px;
+			}
+			.window .photo {
+				height: auto;
+				width: auto;
+				overflow: hidden;
+			}
+			.window .photo .photo-size{
+				float: left;
+				margin: 20px;
+				border: 1px solid black;
+				text-align: center;
+				height: auto;
+				width: 100px;
+			}
+			.window .photo .photo-size img{
+				margin: 10px;
+				height: 80%;
+				width: 80%;
+			}
+			
+			.window .table-style{
+				position: relative;
+				left: 2%;
+				width: 96%;
+				border-collapse:collapse;
+				
+			}
+			.window .table-style td, th{
+			  	border:1px solid grey;
+			}
+			.window .table-style th{
+				background-color: #000000;
+				color: #FFFFFF;
+				text-align: left;
+			}
+			.foot{
+				float: left;
+				margin-top: 2%;
+				height: 80px;
+				width: 100%;
+				font-family: "黑体";
+				text-align: center;
+				background-color: #000000;
+				left: 0;
+			}
+			.foot footer{
+				position: relative;
+				color: #FFFFFF;
+				top: 45%;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a  href="http://www.baidu.com"><img src="img/baidu.png" /></a>
+			<a class="daohang" href="#">导航链接4</a>
+			<a class="daohang" href="#">导航链接3</a>
+			<a class="daohang" href="#">导航链接2</a>
+			<a class="daohang" href="#">导航链接1</a>
+		</div>
+		
+		<div class="right">
+			<form>
+			<table class="table" border="0">
+				<caption><h4>这里以后是一个侧栏，这是侧栏的标题</h4></caption>
+				<tr>
+					<td class="td-1">请输入邮箱地址</td>
+					<td class="td-2"><input type="text" value="这是一个文本框" /></td>
+				</tr>
+				<tr>
+					<td class="td-1"></td>
+					<td class="td-2 flag">邮箱地址请按要求格式输入</td>
+				</tr>
+				<tr>
+					<td class="td-1">请输入密码</td>
+					<td class="td-2"><input type="password" value="111111" /></td>
+				</tr>
+				<tr>
+					<td class="td-1">请重复输入密码</td>
+					<td class="td-2"><input type="password" value="111111" /></td>
+				</tr>
+				<tr>
+					<td class="td-1"></td>
+					<td class="td-2 flag">密码为6-16位英文数字</td>
+				</tr>
+				<tr>
+					<td class="td-1">性别</td>
+					<td class="td-2">
+						<input type="radio" checked="checked" name="Sex" value="man" />男
+						<input type="radio" name="Sex" value="weman" />女
+					</td>
+				</tr>
+				<tr>
+					<td class="td-1">城市</td>
+					<td class="td-2">
+						<select name="city">
+							<option value="beijing" selected="selected">北京</option>
+							<option value="shanxi">陕西</option>
+							<option value="shanghai" >上海</option>
+							<option value="guangzhou">广州</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-1">爱好</td>
+					<td class="td-2">
+						<input type="checkbox" name="yundong"/>运动
+						<input type="checkbox" name="yishu"/>艺术
+						<input type="checkbox" name="kexue"/>科学
+					</td>
+				</tr>
+				<tr>
+					<td class="td-1" style="position: relative; top: -45px;">个人描述</td>
+					<td class="td-2">
+						<textarea >这是一个多行输入框，请输入你的个人描述</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="btn" type="button" value="确认提交" />
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+		
+		<div class="left">
+			<div class="window">
+				<h2 class="text-space">文章一级标题</h2>
+				<h4 class="text-space">文章二级标题</h4>
+				<p class="text-space" style="color: gray; ">文章作者 文章发表时间</p>
+				<p class="text-space text-indent">
+					飘过的流沙，像清风明月般的细雨。深深落在那一纸情深似水的相遇里，雨落的冰冷，像忧伤的痕迹。一字一幕一离一别。散落在红尘中的深深浅浅，带着咋日的过往，滑落微语飘落指尖。换行了<br />
+					飘过的流沙，像清风明月般的细雨。深深落在那一纸情深似水的相遇里，雨落的冰冷，像忧伤的痕迹。一字一幕一离一别。换行了<br />
+					情深的彼岸，一路扮演者天荒。以为时光不老我们不散，不知何时，你我竟是人海中相遇又擦肩而过的天涯过客，注定与你两两相望。<a href="www.baidu.com">这里有一个链接到www.baidu.com</a>你说人生不必执着，过去的就应该像清风一样。洒脱的散在曾经的美好里，我却始终认为。一颗心停留在原地，是彼此最好的相守。
+				</p>
+				<img class="text-space" src="img/5406852827651788002.jpg"/>
+				<p class="text-space text-indent">
+					飘过的流沙，像清风明月般的细雨。深深落在那一纸情深似水的相遇里，雨落的冰冷，像忧伤的痕迹。一字一幕一离一别。换行了 <br />
+					情深的彼岸，一路扮演者天荒。以为时光不老我们不散，<b>这里有个粗体文字</b>不知何时，你我竟是人海中相遇又擦肩而过的天涯过客，注定与你两两相望。<a href="www.baidu.com">这里有一个链接到www.baidu.com</a>你说人生不必执着，过去的就应该像清风一样。洒脱的散在曾经的美好里，我却始终认为。一颗心停留在原地，是彼此最好的相守。
+				</p>
+			</div>
+			
+			<div class="window">
+				<h2 class="text-space">另一篇文章一级标题</h2>
+				<h4 class="text-space">文章二级标题</h4>
+				<p class="text-space" style="color: gray; ">文章作者 文章发表时间</p>
+				<p class="text-space text-indent">
+					飘过的流沙，像清风明月般的细雨。深深落在那一纸情深似水的相遇里，雨落的冰冷，像忧伤的痕迹。一字一幕一离一别。散落在红尘中的深深浅浅，带着咋日的过往，滑落微语飘落指尖。换行了<br />
+					飘过的流沙，像清风明月般的细雨。深深落在那一纸情深似水的相遇里，雨落的冰冷，像忧伤的痕迹。一字一幕一离一别。换行了<br />
+					情深的彼岸，一路扮演者天荒。以为时光不老我们不散，不知何时，你我竟是人海中相遇又擦肩而过的天涯过客，注定与你两两相望。<a href="www.baidu.com">这里有一个链接到www.baidu.com</a>你说人生不必执着，过去的就应该像清风一样。洒脱的散在曾经的美好里，我却始终认为。一颗心停留在原地，是彼此最好的相守。
+				</p>
+				<img class="text-space" src="img/5406852827651788002.jpg"/>
+				<ul style="list-style-type: none;">
+					<li>列表项目1</li>
+					<li>列表项目2</li>
+					<li>列表项目3</li>
+				</ul>
+			</div>
+			
+			<div class="window">
+				<h2 class="text-space">图片</h2>
+				<div class="photo">
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+					<div class="photo-size">
+						<span>好看的图片</span>
+						<img src="img/5406852827651788002.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="window">
+				<h2 class="text-space">最后一篇文章一级标题</h2>
+				<h4 class="text-space">文章二级标题</h4>
+				<p class="text-space" style="color: gray; ">文章作者 文章发表时间</p>
+				<ol>
+					<li class="text-space"><b>排名1</b></li>
+					<li class="text-space"><b>排名2</b></li>
+					<li class="text-space"><b>排名3</b></li>
+				</ol>
+				<p class="text-space">下面是一个表格，给表格加了一个border="1"好让你看出这事一个表格</p>
+				<table class="table-style">
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+					<tr>
+						<td>表格内容</td>
+						<td>表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格内容</td>
+						<td>表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格内容</td>
+						<td>表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格内容</td>
+						<td>表格内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr style="background-color: gray;">
+						<td>总计</td>
+						<td colspan="2" ><b>1000</b></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
